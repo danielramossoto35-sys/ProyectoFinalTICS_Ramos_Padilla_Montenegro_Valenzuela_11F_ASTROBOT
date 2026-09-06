@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroBot - Guatemalan Dynamics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .neon-border { box-shadow: 0 0 15px rgba(0, 255, 204, 0.4); }
+        .neon-text { text-shadow: 0 0 10px rgba(0, 255, 204, 0.7); }
+        .bg-grid { background-image: radial-gradient(rgba(147, 51, 234, 0.2) 1px, transparent 0); background-size: 24px 24px; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased bg-grid selection:bg-cyan-500 selection:text-black">
+
+    <nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-purple-900/50">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">GUATEMALAN DYNAMICS</span>
+            <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
+                <a href="#hero" class="hover:text-cyan-400 transition">Inicio</a>
+                <a href="#empresa" class="hover:text-cyan-400 transition">Empresa</a>
+                <a href="#producto" class="hover:text-cyan-400 transition">AstroBot</a>
+                <a href="#circuito" class="hover:text-cyan-400 transition">Circuito</a>
+                <a href="#documentos" class="hover:text-cyan-400 transition">Documentación</a>
+                <a href="#infografia" class="hover:text-cyan-400 transition">Impacto ODS</a>
+                <a href="#simulador" class="text-cyan-400 font-bold hover:underline">Simulador</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden bg-gradient-to-b from-slate-950 via-purple-950/20 to-slate-950">
+        <div class="text-center max-w-4xl px-6">
+            <span class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest text-cyan-400 border border-cyan-500/30 bg-cyan-500/10 mb-6 inline-block">Innovación para el IRTRA</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-6">Seguridad Espacial con <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-300 to-purple-500 neon-text">AstroBot</span></h1>
+            <p class="text-lg md:text-xl text-slate-400 mb-8 max-w-2xl mx-auto">Sistema inteligente de detección de proximidad para montañas rusas. Protección avanzada con sensores ultrasónicos y alertas inmediatas.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#simulador" class="px-8 py-3.5 rounded-xl bg-cyan-400 text-slate-950 font-bold hover:bg-cyan-300 transition neon-border">Probar Simulador</a>
+                <a href="#producto" class="px-8 py-3.5 rounded-xl border border-purple-500/50 bg-purple-950/30 text-purple-300 font-bold hover:bg-purple-900/40 transition">Explorar Producto</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="empresa" class="py-24 max-w-7xl mx-auto px-6 border-t border-purple-900/30">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-cyan-400 mb-4">Guatemalan Dynamics</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto">Ingeniería en Automatización y Control Aplicada a Sistemas Electromecánicos de Entretenimiento. Llevamos la seguridad de parques temáticos al siguiente nivel.</p>
+        </div>
+        <h3 class="text-xl font-semibold text-purple-400 mb-8 text-center">Nuestro Equipo de Trabajo</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-slate-900/60 border border-purple-800/40 rounded-2xl p-4 text-center">
+                <img src="https://via.placeholder.com/300x300?text=Integrante+1" alt="Integrante 1" class="w-full h-48 object-cover rounded-xl mb-4 border border-purple-500/20">
+                <h4 class="font-bold text-lg text-slate-200">Nombre Integrante 1</h4>
+                <p class="text-sm text-cyan-400">Rol / Especialidad</p>
+            </div>
+            <div class="bg-slate-900/60 border border-purple-800/40 rounded-2xl p-4 text-center">
+                <img src="https://via.placeholder.com/300x300?text=Integrante+2" alt="Integrante 2" class="w-full h-48 object-cover rounded-xl mb-4 border border-purple-500/20">
+                <h4 class="font-bold text-lg text-slate-200">Nombre Integrante 2</h4>
+                <p class="text-sm text-cyan-400">Rol / Especialidad</p>
+            </div>
+            <div class="bg-slate-900/60 border border-purple-800/40 rounded-2xl p-4 text-center">
+                <img src="https://via.placeholder.com/300x300?text=Integrante+3" alt="Integrante 3" class="w-full h-48 object-cover rounded-xl mb-4 border border-purple-500/20">
+                <h4 class="font-bold text-lg text-slate-200">Nombre Integrante 3</h4>
+                <p class="text-sm text-cyan-400">Rol / Especialidad</p>
+            </div>
+            <div class="bg-slate-900/60 border border-purple-800/40 rounded-2xl p-4 text-center">
+                <img src="https://via.placeholder.com/300x300?text=Integrante+4" alt="Integrante 4" class="w-full h-48 object-cover rounded-xl mb-4 border border-purple-500/20">
+                <h4 class="font-bold text-lg text-slate-200">Nombre Integrante 4</h4>
+                <p class="text-sm text-cyan-400">Rol / Especialidad</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="producto" class="py-24 bg-slate-900/40 border-t border-purple-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-cyan-400 mb-4">El Producto: AstroBot</h2>
+                <p class="text-slate-400 max-w-3xl mx-auto">Diseñado específicamente para ser montado en vagones de montañas rusas. Su chasis en forma de casco espacial integra un sistema ultrasónico de respuesta en tiempo real.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+                <img src="https://via.placeholder.com/400x300?text=AstroBot+Vista+Frontal" class="rounded-xl border border-purple-500/30 object-cover w-full h-48">
+                <img src="https://via.placeholder.com/400x300?text=AstroBot+Vista+Lateral" class="rounded-xl border border-purple-500/30 object-cover w-full h-48">
+                <img src="https://via.placeholder.com/400x300?text=Sensores+Ultrasonicos" class="rounded-xl border border-purple-500/30 object-cover w-full h-48">
+                <img src="https://via.placeholder.com/400x300?text=Sistema+LEDs" class="rounded-xl border border-purple-500/30 object-cover w-full h-48">
+                <img src="https://via.placeholder.com/400x300?text=Rueda+Sonora" class="rounded-xl border border-purple-500/30 object-cover w-full h-48">
+                <img src="https://via.placeholder.com/400x300?text=Boton+Desactivacion" class="rounded-xl border border-purple-500/30 object-cover w-full h-48">
+                <img src="https://via.placeholder.com/400x300?text=Montaje+en+IRTRA" class="rounded-xl border border-purple-500/30 object-cover w-full h-48 md:col-span-2 lg:col-span-1">
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="p-6 bg-slate-950 border border-cyan-500/20 rounded-xl"><i data-lucide="radio" class="text-cyan-400 mb-3"></i><h4 class="font-bold text-lg mb-2">Sensores Ultrasónicos</h4><p class="text-sm text-slate-400">Escaneo de perímetro en milisegundos para detectar extremidades fuera de la zona segura.</p></div>
+                <div class="p-6 bg-slate-950 border border-cyan-500/20 rounded-xl"><i data-lucide="lightbulb" class="text-cyan-400 mb-3"></i><h4 class="font-bold text-lg mb-2">Indicadores LED</h4><p class="text-sm text-slate-400">Alertas visuales de alta intensidad que se activan inmediatamente al detectar riesgo.</p></div>
+                <div class="p-6 bg-slate-950 border border-cyan-500/20 rounded-xl"><i data-lucide="disc" class="text-cyan-400 mb-3"></i><h4 class="font-bold text-lg mb-2">Rueda Sonora</h4><p class="text-sm text-slate-400">Mecanismo de advertencia auditiva de alta frecuencia para entornos ruidosos.</p></div>
+                <div class="p-6 bg-slate-950 border border-cyan-500/20 rounded-xl"><i data-lucide="power" class="text-cyan-400 mb-3"></i><h4 class="font-bold text-lg mb-2">Botón de Control</h4><p class="text-sm text-slate-400">Permite al personal técnico reiniciar o desactivar el sistema tras una inspección.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="circuito" class="py-24 max-w-7xl mx-auto px-6 border-t border-purple-900/30">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-cyan-400 mb-4">Esquemático del Circuito</h2>
+            <p class="text-slate-400">Diseño electrónico y simulación de la lógica de control desarrollada en Tinkercad.</p>
+        </div>
+        <div class="bg-slate-900 border border-purple-500/30 rounded-2xl p-4 max-w-4xl mx-auto">
+            <img src="https://via.placeholder.com/1000x500?text=Circuito+Tinkercad+AstroBot" alt="Circuito Tinkercad" class="w-full rounded-xl object-cover">
+        </div>
+    </section>
+
+    <section id="documentos" class="py-24 bg-slate-900/40 border-t border-purple-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-cyan-400 mb-4">Documentación Técnica</h2>
+                <p class="text-slate-400">Consulta los informes detallados del proyecto en línea.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-950 border border-purple-800/40 rounded-2xl p-4">
+                    <h3 class="text-lg font-bold text-purple-300 mb-4 flex items-center gap-2"><i data-lucide="file-text"></i> Informe Técnico (Word / Drive)</h3>
+                    <div class="w-full h-96 bg-slate-900 rounded-xl overflow-hidden">
+                        <iframe src="https://docs.google.com/gview?url=https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf&embedded=true" class="w-full h-full border-0"></iframe>
+                    </div>
+                </div>
+                <div class="bg-slate-950 border border-purple-800/40 rounded-2xl p-4">
+                    <h3 class="text-lg font-bold text-purple-300 mb-4 flex items-center gap-2"><i data-lucide="file-check"></i> Manual de Usuario (PDF)</h3>
+                    <div class="w-full h-96 bg-slate-900 rounded-xl overflow-hidden">
+                        <iframe src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="w-full h-full border-0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="infografia" class="py-24 max-w-7xl mx-auto px-6 border-t border-purple-900/30">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-cyan-400 mb-4">Alineación con Objetivos ODS</h2>
+            <p class="text-slate-400">Cómo AstroBot contribuye al desarrollo sostenible y la seguridad industrial.</p>
+        </div>
+        <div class="bg-slate-900 border border-purple-500/30 rounded-2xl p-4 max-w-4xl mx-auto">
+            <img src="https://via.placeholder.com/800x1200?text=Infografia+ODS+AstroBot" alt="Infografía ODS" class="w-full rounded-xl object-cover">
+        </div>
+    </section>
+
+    <section id="podcast" class="py-24 bg-slate-900/40 border-t border-purple-900/30">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-cyan-400 mb-4">Podcast Informativo</h2>
+            <p class="text-slate-400 mb-8">Escucha a nuestro equipo discutir la ingeniería detrás de AstroBot y su impacto en parques temáticos.</p>
+            
+            <div class="aspect-video bg-slate-950 border border-purple-500/30 rounded-2xl overflow-hidden mb-6">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Podcast AstroBot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <a href="https://spotify.com" target="_blank" class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-semibold underline">
+                <i data-lucide="external-link"></i> Abrir enlace directo del Podcast
+            </a>
+        </div>
+    </section>
+
+    <section id="simulador" class="py-24 max-w-5xl mx-auto px-6 border-t border-purple-900/30">
+        <div class="bg-slate-900 border-2 border-cyan-500/50 rounded-3xl p-8 neon-border">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-cyan-400 mb-2">Simulador de Proximidad AstroBot</h2>
+                <p class="text-slate-400">Mueve el deslizador para simular una mano acercándose al casco de AstroBot.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="relative bg-slate-950 h-64 rounded-2xl border border-purple-800/50 flex items-center justify-between px-8 overflow-hidden">
+                    <div class="z-10 text-center">
+                        <img src="https://via.placeholder.com/100x100?text=AstroBot" alt="AstroBot" class="w-20 h-20 rounded-full border-2 border-cyan-400 mx-auto">
+                        <span class="text-xs text-slate-400 mt-1 block">AstroBot</span>
+                    </div>
+
+                    <div id="mano" class="absolute transition-all duration-75 flex flex-col items-center" style="right: 10px;">
+                        <span class="text-3xl">✋</span>
+                        <span class="text-[10px] text-slate-400">Pasajero</span>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Distancia de la mano: <span id="distancia-texto" class="text-cyan-400 font-bold">100</span> cm</label>
+                        <input type="range" id="distancia" min="5" max="100" value="100" class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-cyan-400">
+                    </div>
+
+                    <div id="status-card" class="p-4 rounded-xl bg-slate-950 border border-green-500/50 transition-colors">
+                        <div class="flex items-center gap-3">
+                            <div id="status-light" class="w-4 h-4 rounded-full bg-green-500 animate-pulse"></div>
+                            <div>
+                                <h4 id="status-title" class="font-bold text-green-400">ZONA SEGURA</h4>
+                                <p id="status-desc" class="text-xs text-slate-400">Ninguna extremidad fuera de la trayectoria permisible.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 border-t border-purple-900/40 text-center text-sm text-slate-500">
+        <p>&copy; 2026 Guatemalan Dynamics. Proyecto diseñado para IRTRA Guatemala.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const slider = document.getElementById('distancia');
+        const distanciaTexto = document.getElementById('distancia-texto');
+        const mano = document.getElementById('mano');
+        const statusCard = document.getElementById('status-card');
+        const statusLight = document.getElementById('status-light');
+        const statusTitle = document.getElementById('status-title');
+        const statusDesc = document.getElementById('status-desc');
+
+        slider.addEventListener('input', (e) => {
+            const dist = e.target.value;
+            distanciaTexto.textContent = dist;
+
+            // Posicionamiento de la mano (porcentaje)
+            const rightPosition = (dist / 100) * 65;
+            mano.style.right = `${rightPosition}%`;
+
+            // Lógica de alerta (Umbral de peligro a < 30 cm)
+            if (dist < 30) {
+                statusCard.className = "p-4 rounded-xl bg-red-950/40 border-2 border-red-500 transition-colors";
+                statusLight.className = "w-4 h-4 rounded-full bg-red-500 animate-ping";
+                statusTitle.className = "font-bold text-red-400";
+                statusTitle.textContent = "¡PELIGRO! DISTANCIA CRÍTICA";
+                statusDesc.textContent = "Alerta activada: LEDs encendidos y rueda sonora en marcha.";
+            } else {
+                statusCard.className = "p-4 rounded-xl bg-slate-950 border border-green-500/50 transition-colors";
+                statusLight.className = "w-4 h-4 rounded-full bg-green-500 animate-pulse";
+                statusTitle.className = "font-bold text-green-400";
+                statusTitle.textContent = "ZONA SEGURA";
+                statusDesc.textContent = "Ninguna extremidad fuera de la trayectoria permisible.";
+            }
+        });
+    </script>
+</body>
+</html>
