@@ -215,11 +215,11 @@
             distanciaTexto.textContent = dist;
 
             // Posicionamiento de la mano (porcentaje)
-            const rightPosition = (dist / 0) * 65;
+            const rightPosition = (dist / 100) * 65;
             mano.style.right = `${rightPosition}%`;
 
             // Lógica de alerta (Umbral de peligro a < 30 cm)
-            if (dist < 70) {
+            if (dist < 30) {
                 statusCard.className = "p-4 rounded-xl bg-red-950/40 border-2 border-red-500 transition-colors";
                 statusLight.className = "w-4 h-4 rounded-full bg-red-500 animate-ping";
                 statusTitle.className = "font-bold text-red-400";
