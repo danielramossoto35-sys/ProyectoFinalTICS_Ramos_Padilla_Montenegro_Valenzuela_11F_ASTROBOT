@@ -26,7 +26,7 @@
                 <a href="#documentos" class="hover:text-cyan-400 transition">Documentación</a>
                 <a href="#infografia" class="hover:text-cyan-400 transition">Impacto ODS</a>
                 <a href="#simulador" class="hover:text-cyan-400 transition">Simulador</a>
-                <a href="#puntos-extra" class="text-cyan-400 font-bold hover:underline">Puntos Extra</a>
+                <a href="#puntos-extra" class="text-cyan-400 font-bold hover:underline">Evidencias</a>
             </div>
         </div>
     </nav>
@@ -99,7 +99,7 @@
         </div>
     </section>
 
-    <!-- CIRCUITO TINKERCAD + VIDEO -->
+    <!-- CIRCUITO TINKERCAD + VIDEO (ESQUEMÁTICO INTACTO) -->
     <section id="circuito" class="py-24 max-w-7xl mx-auto px-6 border-t border-purple-900/30">
         <div class="text-center mb-12">
             <h2 class="text-3xl font-bold text-cyan-400 mb-4">Esquemático del Circuito</h2>
@@ -111,48 +111,61 @@
                 <img src="captura circuito proyecto final.png" alt="Circuito Tinkercad" class="w-full rounded-xl object-cover">
             </div>
             <div class="bg-slate-900 border border-purple-500/30 rounded-2xl p-4">
-                <img src="chematic proyecto final.png" alt="Esquemático Tinkercad" class="w-full rounded-xl object-cover">
+                <img src="schematic proyecto final.png" alt="Esquemático Tinkercad" class="w-full rounded-xl object-cover">
             </div>
             <div class="bg-slate-900 border border-purple-500/30 rounded-2xl p-4">
                 <img src="components proyecto final.png" alt="Componentes Tinkercad" class="w-full rounded-xl object-cover">
             </div>
         </div>
 
-        <!-- UN SOLO VIDEO DEL CIRCUITO -->
         <div class="max-w-3xl mx-auto">
             <h3 class="text-2xl font-bold text-purple-300 mb-6 text-center flex items-center justify-center gap-2">
                 <i data-lucide="video"></i> Demostración del Circuito y Código C++
             </h3>
             <div class="bg-slate-950 border border-purple-500/30 rounded-2xl p-4">
                 <div class="aspect-video bg-slate-900 rounded-xl overflow-hidden">
-                    <iframe class="w-full h-full" src="simulacion proyecto final.mp4" title="Demostración del Circuito" frameborder="0" allowfullscreen></iframe>
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Demostración del Circuito" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- DOCUMENTACIÓN TÉCNICA (CORREGIDA LA ESTRUCTURA HTML) -->
+    <!-- DOCUMENTACIÓN TÉCNICA (AMBOS VISORES CON PDF + BOTONES DE DESCARGA) -->
     <section id="documentos" class="py-24 bg-slate-900/40 border-t border-purple-900/30">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-cyan-400 mb-4">Documentación Técnica</h2>
-                <p class="text-slate-400">Consulta los informes detallados del proyecto en línea.</p>
+                <p class="text-slate-400">Consulta y descarga los informes técnicos del proyecto.</p>
             </div>
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Visor Documento 1 (Word) -->
-                <div class="bg-slate-950 border border-purple-800/40 rounded-2xl p-4">
-                    <h3 class="text-lg font-bold text-purple-300 mb-4 flex items-center gap-2"><i data-lucide="file-text"></i> Informe Técnico (Word)</h3>
-                    <div class="w-full h-[500px] bg-slate-900 rounded-xl overflow-hidden border border-purple-500/20">
-                        <iframe src="INVESTIGACION TICS U4 11F.pdf" class="w-full h-full border-0"></iframe>
+                <!-- Tarjeta Documento Word (Visor PDF + Botón Descarga .docx) -->
+                <div class="bg-slate-950 border border-purple-800/40 rounded-2xl p-4 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-purple-300 mb-4 flex items-center gap-2">
+                            <i data-lucide="file-text" class="text-blue-400"></i> Informe Técnico (Word .docx)
+                        </h3>
+                        <div class="w-full h-[500px] bg-slate-900 rounded-xl overflow-hidden border border-purple-500/20 mb-4">
+                            <iframe src="INVESTIGACION TICS U4 11F.pdf" class="w-full h-full border-0"></iframe>
+                        </div>
                     </div>
+                    <a href="INVESTIGACION TICS U4 11F.docx" download class="w-full py-3 px-4 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl flex items-center justify-center gap-2 transition duration-200">
+                        <i data-lucide="download"></i> Descargar Documento (.docx)
+                    </a>
                 </div>
 
-                <!-- Visor Documento 2 (PDF) -->
-                <div class="bg-slate-950 border border-purple-800/40 rounded-2xl p-4">
-                    <h3 class="text-lg font-bold text-purple-300 mb-4 flex items-center gap-2"><i data-lucide="file-check"></i> Informe Técnico (PDF)</h3>
-                    <div class="w-full h-[500px] bg-slate-900 rounded-xl overflow-hidden border border-purple-500/20">
-                        <iframe src="INVESTIGACION TICS U4 11F.pdf" class="w-full h-full border-0"></iframe>
+                <!-- Tarjeta Documento PDF (Visor PDF + Botón Descarga .pdf) -->
+                <div class="bg-slate-950 border border-purple-800/40 rounded-2xl p-4 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-purple-300 mb-4 flex items-center gap-2">
+                            <i data-lucide="file-check" class="text-red-400"></i> Informe Técnico (PDF)
+                        </h3>
+                        <div class="w-full h-[500px] bg-slate-900 rounded-xl overflow-hidden border border-purple-500/20 mb-4">
+                            <iframe src="INVESTIGACION TICS U4 11F.pdf" class="w-full h-full border-0"></iframe>
+                        </div>
                     </div>
+                    <a href="INVESTIGACION TICS U4 11F.pdf" download class="w-full py-3 px-4 bg-red-600 hover:bg-red-500 text-white font-bold rounded-xl flex items-center justify-center gap-2 transition duration-200">
+                        <i data-lucide="download"></i> Descargar Documento (.pdf)
+                    </a>
                 </div>
             </div>
         </div>
@@ -226,20 +239,25 @@
         </div>
     </section>
 
-    <!-- SECCIÓN PUNTOS EXTRA (UN SOLO VIDEO) -->
+    <!-- SECCIÓN PUNTOS EXTRA / EVIDENCIAS (VIDEO DE WHATSAPP INTEGRADO) -->
     <section id="puntos-extra" class="py-24 bg-slate-900/40 border-t border-purple-900/30">
         <div class="max-w-4xl mx-auto px-6">
             <div class="text-center mb-12">
                 <span class="px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest text-cyan-400 border border-cyan-500/30 bg-cyan-500/10 mb-4 inline-block">Material Adicional</span>
-                <h2 class="text-3xl font-bold text-cyan-400 mb-4">Puntos Extra & Demostración</h2>
-                <p class="text-slate-400 max-w-2xl mx-auto">Video complementario de la prueba técnica en terreno del prototipo AstroBot.</p>
+                <h2 class="text-3xl font-bold text-cyan-400 mb-4">Evidencias del Proyecto</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Video demostrativo de pruebas y evidencias técnicas registradas del prototipo AstroBot.</p>
             </div>
 
             <div class="bg-slate-950 border border-purple-800/40 rounded-2xl p-4">
-                <h3 class="font-bold text-lg text-slate-200 mb-2 flex items-center gap-2"><i data-lucide="clapperboard" class="text-cyan-400"></i> Prueba de Funcionamiento del Prototipo</h3>
-                <p class="text-xs text-slate-400 mb-4">Demostración completa del sensor ultrasónico activando las alertas visuales y auditivas.</p>
+                <h3 class="font-bold text-lg text-slate-200 mb-2 flex items-center gap-2">
+                    <i data-lucide="clapperboard" class="text-cyan-400"></i> Registro de Evidencia en Video
+                </h3>
+                <p class="text-xs text-slate-400 mb-4">Grabación directa de la prueba en vivo del prototipo.</p>
                 <div class="aspect-video bg-slate-900 rounded-xl overflow-hidden border border-purple-500/20">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Prueba de Funcionamiento" frameborder="0" allowfullscreen></iframe>
+                    <video class="w-full h-full object-cover" controls preload="metadata">
+                        <source src="WhatsApp Video 2026-09-09 at 6.44.29 PM.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de este video.
+                    </video>
                 </div>
             </div>
         </div>
